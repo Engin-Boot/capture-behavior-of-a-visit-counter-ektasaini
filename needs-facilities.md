@@ -3,7 +3,7 @@
 Scenario: Report visitor trends during a week of operation
 
   Given An calender synced sensor that differentiates between patient-card and visitor-card
-  When a visitor-card is detected
+  When sensor detects a visitor-card
   Then count records for current day and updates report bar graph for week
 
 Scenario: Alert when seating capacity is full
