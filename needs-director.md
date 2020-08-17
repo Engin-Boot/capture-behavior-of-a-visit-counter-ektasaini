@@ -2,9 +2,9 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given
-  When
-  Then
+  Given  A calender synced sensor that differentiates between patient-card and non-patient-card
+  When There is an entry, sensor identifies the type of card
+  Then increments the patient-card enteries on that particular day
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
